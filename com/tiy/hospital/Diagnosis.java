@@ -9,10 +9,13 @@ public class Diagnosis {
     public static final int COMMON_COLD = 3;
     public static final int STREP_THROAT = 4;
     public static final int UNDIAGONOSED = -1;
+    public static  final int FLU = 5;
 
     private int illness = UNDIAGONOSED;
 
     public Diagnosis(int illness) {
         this.illness = illness;
     }
+
+
 }
