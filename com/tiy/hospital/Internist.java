@@ -10,7 +10,13 @@ public class Internist extends HospitalDoctor {
     }
 
     public Diagnosis diagnose() {
-        return new Diagnosis(Diagnosis.FLU);
+        return new Diagnosis(Diagnosis.COMMON_COLD);
     }
+
+    public void processOnePerson(Person personToProcess) {
+        // do something to a person object
+    }
+
+
 
 }
