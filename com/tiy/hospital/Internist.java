@@ -13,6 +13,11 @@ public class Internist extends HospitalDoctor {
         return new Diagnosis(Diagnosis.COMMON_COLD);
     }
 
+    public static void treatmentI(){
+        System.out.println("Here is a prescription for antibiotics. Take them ALL and if you are not better in two weeks come back and see me or your PCP. ");
+    }
+
+
     public void processOnePerson(Person personToProcess) {
         // do something to a person object
     }

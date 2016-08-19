@@ -6,12 +6,16 @@ package com.tiy.hospital;
 public abstract class HospitalDoctor extends Person implements Doctor {
     private String college;
 
+    //HospitalDoctor nameOne = new HospitalDoctor();
+
+
     public HospitalDoctor(String firstName, String lastName, String college) {
         super(firstName, lastName);
         this.college = college;
+        //HospitalDoctor nameOne = new HospitalDoctor();
+        //HospitalDoctor nameOne = new HospitalDoctor (String firstName, String lastName, String college);
     }
-    public HospitalDoctor() {
-    }
+
 
     public String getCollege() {
         return college;

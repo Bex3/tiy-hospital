@@ -15,6 +15,10 @@ public class SurgicalOncologist extends HospitalDoctor implements Surgeon {
 
     public boolean operate(Patient patient) {
         patient.setSick(false);
-        return true; // successfull operation
+        return true; // successful operation
     }
+    public static void treatmentSO(){
+        System.out.println("I have scheduled your surgery for next Tuesday at 9:00 AM. ");
+    }
+
 }

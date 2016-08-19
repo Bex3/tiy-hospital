@@ -12,4 +12,8 @@ public class ObGyn extends HospitalDoctor{
     public Diagnosis diagnose() {
         return new Diagnosis(Diagnosis.LABOR);
     }
+    public static void treatmentO(){
+        System.out.println("We will get you into a room immediately so we can deliver a healthy baby! ");
+    }
+
 }
