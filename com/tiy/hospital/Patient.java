@@ -6,6 +6,10 @@ package com.tiy.hospital;
 public class Patient extends Person {
     private boolean isSick = true;
 
+    public Patient() {
+    }
+
+
     public boolean isSick() {
         return isSick;
     }

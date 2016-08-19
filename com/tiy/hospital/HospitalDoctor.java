@@ -10,6 +10,8 @@ public abstract class HospitalDoctor extends Person implements Doctor {
         super(firstName, lastName);
         this.college = college;
     }
+    public HospitalDoctor() {
+    }
 
     public String getCollege() {
         return college;
