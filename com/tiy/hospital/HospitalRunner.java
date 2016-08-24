@@ -23,13 +23,7 @@ public class HospitalRunner
         HashMap<String, HospitalDoctor> userDoctors = exerciseWithDom(); // return must be caught - so we name a new variable before calling on the exercise method
 
 
-        System.out.println();//need some space
-        System.out.println();//need some mo space
-        Adminstrator myAdministrator = new Adminstrator();
-        System.out.println("Hello hospital administrator!");
-        myAdministrator.largeAmountOfInfo();
-        myAdministrator.documents();
-        myAdministrator.tedious();
+
 
 
         //ask the user what type of doc firstDoc is...
@@ -101,14 +95,20 @@ public class HospitalRunner
                 System.out.println("You should speak with our OBGYN");
                 ObGyn.treatmentO();
                 break;
-
-            } else if (!(doc instanceof Oncologist) || !(doc instanceof SurgicalOncologist) || !(doc instanceof
-            Internist) || !(doc instanceof ObGyn)){
+            } else {
                 System.out.println("I'm sorry, unfortunately, we do not have anyone that can see you at this moment. I will be happy to direct you to another hospital. ");
                 break;
             }
 
         }
+
+        System.out.println();//need some space
+        System.out.println();//need some mo space
+        Adminstrator myAdministrator = new Adminstrator();
+        System.out.println("Hello hospital administrator!");
+        myAdministrator.largeAmountOfInfo();
+        myAdministrator.documents();
+        myAdministrator.tedious();
 
         System.out.println("HospitalRunner.main() - done!");
     }
@@ -166,8 +166,8 @@ public class HospitalRunner
 
                 // add it to the collection
                 doctorHash.put(doc.getFirstName(), doc);
-                doctorHash.put(doc.getLastName(), doc);
-                doctorHash.put(doc.getCollege(), doc);
+                //doctorHash.put(doc.getLastName(), doc);
+                //doctorHash.put(doc.getCollege(), doc);
             }
 
 
@@ -200,5 +200,6 @@ public class HospitalRunner
                 String hospitalDoctorCollege = nameOne.getCollege();*/
            // }
         //}
+
 }
 
